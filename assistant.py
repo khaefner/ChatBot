@@ -55,7 +55,7 @@ def play_audio_output(text):
     engine.runAndWait()
 
 conversation_history = []
-print("Hi, I am Friday, your personal voice assistant. How can I help you today?"
+print("Hi, I am Friday, your personal voice assistant. How can I help you today?")
 speak("Hi, I am Friday, your personal voice assistant. How can I help you today?")
 
 while True:
