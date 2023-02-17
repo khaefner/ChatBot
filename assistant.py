@@ -31,7 +31,8 @@ def chatbot(prompt):
 
 def get_audio_input():
     r = sr.Recognizer()
-    with sr.Microphone(device_index=14) as source:
+    with sr.Microphone() as source:
+        r.adjust_for_ambient_noise(source)
         print("Speak:")
         audio = r.listen(source)
 
